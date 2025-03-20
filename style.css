@@ -107,11 +107,60 @@ img {
     max-width: none;
     text-align: center; 
     margin-left: -50%;
-    margin-top: 150px; /* Adiciona espaçamento acima para mover para baixo */
-    transform: none; /* Remove qualquer deslocamento */
-    position: relative; /* Permite ajustes de posição */
-    top: 0; /* Reseta qualquer deslocamento vertical */
-    width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+    margin-top: 150px; 
+    transform: none; 
+    position: relative; 
+    top: 0; 
+    width: 100%;
+}
+#section3 {
+    background-color: #221818;
+    width: 100vw;
+    height: auto;
+    font-family: 'Lakki Reddy';
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+}
+
+#text2r3 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+#section3 ol {
+    list-style: decimal;
+    padding-left: 20px;
+    max-width: 80%;
+}
+
+#section3 li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#section3 ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+#section3 strong {
+    font-weight: bold;
+    color: #f0a500;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #221818 ;
+    color: white;
+    font-family: 'Lakki Reddy';
 }
 
 
