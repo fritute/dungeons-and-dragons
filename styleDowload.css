@@ -16,6 +16,7 @@ a {
 html, body {
     scroll-behavior: smooth;
     height: 100%;
+    background-color: #221818;
 }
 
 header {
@@ -55,4 +56,75 @@ li {
 img {
     height: 50px;
     margin-right: 20px; 
+}
+#fichas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #221818;
+    gap: 60px;
+    margin-top: 6%;
+}
+#ficha1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    width: 300px;
+    height: 300px;
+}
+#ficha2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    width: 300px;
+    height: 300px;
+}
+#textFicha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    gap: 200px;
+    transform: translateX(30%);
+    font-family: 'Lakki Reddy';
+
+
+}
+#p1Ficha{
+    transform: translateX(20%);
+}
+#p2Ficha{
+    transform: translateX(-5%);
+}
+.divButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    margin-top: 20px;
+  
+    
+}
+#button1{
+    background-color: red;
+    width: 120px;
+    font-family: 'Lakki Reddy';
+    height: 50px;
+    transform: translateX(30%);
+}
+#button2{
+    background-color: red;
+    width: 120px;
+    font-family: 'Lakki Reddy';
+    height: 50px;
+    transform: translateX(-40%);
 }
