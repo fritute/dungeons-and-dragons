@@ -30,7 +30,7 @@ header {
 nav {
     display: flex; 
     gap: 100px;
-    flex-grow: 1; /* Adiciona essa linha */
+    flex-grow: 1; 
 }
 
 nav ul {
@@ -71,20 +71,155 @@ img {
    
  
 }
-#section2{
+#section2 {
     background-color: #221818;
     width: 100vw;
     height: 100vh;
-    font-family: 'Lakki Reddy';font-size: 22px;
+    font-family: 'Lakki Reddy';
+    font-size: 22px;
+    display: flex;
+    gap: 20px; 
 }
-#text1{
+
+
+#text1 {
+    margin-top: 40px;
     color: white;
     font-size: 50px;
-    text-align: center;
-    padding-top: 30px;
-    transform: translateX(-25%);
+    text-align: right;
+    width: 80%;
+    max-width: 80%;
+   height: 10%;
+    white-space: nowrap; 
+   
+
 }
-#p1{
+#dados {
+    position: relative;
+    transform: translateY(50%);
+    width: 300px;
+    height: 300px; 
+    margin-right: 100px;
+}
+#p1 {
     color: white;
-    
+    font-size: 25px;
+    max-width: none;
+    text-align: center; 
+    margin-left: -50%;
+    margin-top: 150px; /* Adiciona espaçamento acima para mover para baixo */
+    transform: none; /* Remove qualquer deslocamento */
+    position: relative; /* Permite ajustes de posição */
+    top: 0; /* Reseta qualquer deslocamento vertical */
+    width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+}
+
+
+/* Responsividade */
+
+/* Para telas menores que 1024px */
+@media (max-width: 1024px) {
+    #image-container {
+        height: 80vh; 
+        width: 100%;
+    }
+
+    #central-image {
+        width: 100%; 
+        height: auto; 
+    }
+
+    #section2 {
+        font-size: 20px; 
+        padding: 20px; 
+    }
+
+    #text1 {
+        font-size: 40px;
+        transform: translateX(-10%); 
+    }
+
+    #p1 {
+        transform: translateX(-10%); 
+    }
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    #image-container {
+        height: 70vh; 
+    }
+
+    #text1 {
+        font-size: 30px; 
+        transform: translateX(0); 
+        text-align: center; 
+    }
+
+    #p1 {
+        transform: translateX(0); 
+        text-align: center; 
+    }
+
+    #section2 {
+        font-size: 18px; 
+    }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+    #image-container {
+        height: 60vh;
+    }
+
+    #text1 {
+        font-size: 24px;
+    }
+
+    #p1 {
+        font-size: 16px;
+    }
+
+    #section2 {
+        font-size: 16px; 
+        padding: 10px; 
+    }
+}
+
+/* Para telas maiores que 1920px (Full HD e superiores) */
+@media (min-width: 1920px) {
+    #image-container {
+        height: 100vh; 
+        width: 100vw; 
+    }
+
+    #central-image {
+        width: 100vw; 
+        height: 100vh; 
+        object-fit: cover; 
+    }
+
+    #section2 {
+        font-size: 24px; 
+        padding: 40px;
+    }
+
+    #text1 {
+        font-size: 60px; 
+        transform: translateX(-20%); 
+    }
+
+    #p1 {
+        font-size: 20px; 
+        transform: translateX(-20%); 
+    }
+
+    li {
+        font-size: 24px; 
+        padding: 10px 80px; 
+    }
+
+    header {
+        padding: 20px 40px;
+    }
 }
