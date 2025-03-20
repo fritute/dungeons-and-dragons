@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul, ol, li {
+    list-style: none;  
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: #221818;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    padding: 10px 20px; 
+}
+
+nav {
+    display: flex; 
+    gap: 100px;
+    flex-grow: 1; 
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+li {
+    padding: 10px;
+    margin: 0 10px; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 20px; 
+    padding: 10px 70px; 
+
+}
+main{
+    font-family: 'Lakki Reddy';
+}
+img {
+    height: 50px;
+    margin-right: 20px; 
+}
+#text1 {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-align: center; 
+    margin: 0 auto; 
+    margin-top: 5%;
+}
+#pesquisa{
+   color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin: 0 auto; 
+    transform: translateX(90%);
+    margin-top: 9%;
+    
+}
+.box img{
+    width: 3,80%;
+    height: 3,80%;
+    margin-left: 28%;
+    transform: translateX(100%);
+    transform: translateY(20%);
+    z-index: 1000000 ;
+}
+.texto2{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-align: center; 
+    margin: 0 auto; 
+    margin-top: 15%;
+   
+}
+#titulo2{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin: 0 auto; 
+    transform: translateX(-30%);
+    margin-top: 5%;
+    
+}
+#text2{
+    margin-top: 3%;
+    font-size: 25px;
+}
+#box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  #data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
