@@ -28,10 +28,10 @@ let currentImageIndex = 0;
 function changeImage() {
   const imgElement = document.getElementById('central-image')
   if (imgElement) {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    imgElement.src = images[currentImageIndex].src;
-    imgElement.alt = images[currentImageIndex].alt;
+    currentImageIndex = (currentImageIndex + 1) % images.length
+    imgElement.src = images[currentImageIndex].src
+    imgElement.alt = images[currentImageIndex].alt
   }
 }
 
-setInterval(changeImage, 3000);
+setInterval(changeImage, 3000)

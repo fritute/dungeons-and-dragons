@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul, ol, li {
+    list-style: none;  
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: #221818;
+    color: white;
+    font-family: 'Lakki Reddy', sans-serif;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    padding: 10px 20px; 
+}
+
+nav {
+    display: flex; 
+    gap: 100px;
+    flex-grow: 1; 
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+li {
+    padding: 10px;
+    margin: 0 10px; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 20px; 
+    padding: 10px 70px; 
+}
+
+img {
+    height: 50px;
+    margin-right: 20px; 
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    align-items: center;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #2a1e1e;
+    color: white;
+    min-width: 200px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#search-button {
+    background-color: #4CAF50;
+}
+
+#search-button:hover {
+    background-color: #45a049;
+}
+
+#show-all-button {
+    background-color: #6c5ce7;
+}
+
+#show-all-button:hover {
+    background-color: #5d4aec;
+}
+
+#data-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #2a1e1e;
+    border-radius: 8px;
+}
+
+#data-container h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+#data-container li {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #3a2a2a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#data-container li:hover {
+    background-color: #4a3a3a;
+}
+
+.monster-card {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.monster-image {
+    flex: 0 0 450px;
+}
+
+.monster-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.monster-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.monster-info h2 {
+    color: #6c5ce7;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.monster-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.monster-info strong {
+    color: #4CAF50;
+}
+
+.monster-actions, .monster-abilities {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #444;
+}
+
+.monster-actions h3, .monster-abilities h3 {
+    color: #6c5ce7;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.action, .ability {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #3a2a2a;
+    border-radius: 6px;
+}
+
+.action h4, .ability h4 {
+    color: #4CAF50;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.back-button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.back-button:hover {
+    background-color: #5d4aec;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .monster-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .monster-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .monster-image img {
+        max-height: 450px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .buttons {
+        width: 100%;
+    }
+    
+    button {
+        flex: 1;
+        padding: 15px;
+    }
+    
+    .monster-info h2 {
+        font-size: 24px;
+    }
+    
+    .monster-info p {
+        font-size: 16px;
+    }
+}

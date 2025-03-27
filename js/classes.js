@@ -15,15 +15,15 @@ async function safeFetch(url, options = {}, timeout = 15000) {
    
     const timeoutId = setTimeout(() => {
         controller.abort();
-        console.log('Request timeout após', timeout, 'ms');
+        console.log('Request timeout após', timeout, 'ms')
     }, timeout)
 
     try {
-        const response = await fetch(url, { ...options, signal });
+        const response = await fetch(url, { ...options, signal })
         clearTimeout(timeoutId);
         
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            throw new Error(`HTTP error! status: ${response.status}`)
         }
         return await response.json();
     } catch (error) {
