@@ -9,31 +9,40 @@
     <title>Home</title>
 </head>
 <body>
-   <header>  <div>
-    <nav>
-        <ul>
-            <img src="./img/image 1.png" alt="Logo">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./dowload.html">Ficha Personagem</a></li>
-            <li><a href="./classes.html">Classes</a></li>
-            <li><a href="#amarelo">Feitiços</a></li>
-            <li><a href="#roxo">Criatura</a></li>
-        </ul>
-    </nav>
-</div>
+   <header>
+    <div>
+        <nav>
+            <ul>
+                <img src="./img/image 1.png" alt="Logo">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./dowload.html">Ficha Personagem</a></li>
+                <li><a href="./classes.html">Classes</a></li>
+                <li><a href="#amarelo">Feitiços</a></li>
+                <li><a href="#roxo">Criatura</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
       
-        <main>
-           <h1 id="text1">Pesquisar nome da classe vai trazer mais informações sobre ela:</h1>
-           <div class="box">
-            <input id="pesquisa"  type="text">
-            <img id="icon" src="./img/icon.png" alt="">
-           </div>
-           <div class="texto2">
-            <h2 id="titulo2">Classes de D&D:</h2>
-            <p id="text2">barbarian , bard , cleric , druid , fighter , monk , paladin , ranger , rogue , sorcerer , warlock , wizard</p>
-           </div>
-           <div id="data-container"></div>
-        </main>
-</body> 
-    </header>
+<main>
+   <h1 id="text1">Pesquisar nome da classe vai trazer mais informações sobre ela:</h1>
+   <div class="box">
+    <input id="pesquisa" type="text">
+    <button id="search-button">Pesquisar</button>
+    <img id="icon" src="./img/icon.png" alt="">
+   </div>
+   <div class="texto2">
+    <h2 id="titulo2">Classes de D&D:</h2>
+    <p id="text2">barbarian, bard, cleric, druid, fighter, monk, paladin, ranger, rogue, sorcerer, warlock, wizard</p>
+   </div>
+   <div id="data-container" class="data-results"></div>
+</main>
+
+<script>
+    document.getElementById('search-button').addEventListener('click', function() {
+        const className = document.getElementById('pesquisa').value;
+        getClassInfo(className);
+    });
+</script>
+</body>
+</html>
