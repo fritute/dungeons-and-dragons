@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Lakki Reddy' rel='stylesheet'>
-    <script src="./classes.js" defer></script>
-    <link rel="stylesheet" href="./styleClasses.css">
+    <script src="/js/classes.js" defer></script>
+    <link rel="stylesheet" href="/css/styleClasses.css">
     <title>Home</title>
 </head>
 <body>
@@ -14,10 +14,10 @@
         <nav>
             <ul>
                 <img src="./img/image 1.png" alt="Logo">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./dowload.html">Ficha Personagem</a></li>
-                <li><a href="./classes.html">Classes</a></li>
-                <li><a href="#amarelo">Feitiços</a></li>
+                <li><a href="/src/index.html">Home</a></li>
+                <li><a href="/src/dowload.html">Ficha Personagem</a></li>
+                <li><a href="/src/classes.html">Classes</a></li>
+                <li><a href="/src/feiticos.html">Feitiços</a></li>
                 <li><a href="#roxo">Criatura</a></li>
             </ul>
         </nav>
@@ -29,7 +29,6 @@
    <div class="box">
     <input id="pesquisa" type="text">
     <button id="search-button">Pesquisar</button>
-    <img id="icon" src="./img/icon.png" alt="">
    </div>
    <div class="texto2">
     <h2 id="titulo2">Classes de D&D:</h2>
@@ -42,7 +41,7 @@
     document.getElementById('search-button').addEventListener('click', function() {
         const className = document.getElementById('pesquisa').value;
         getClassInfo(className);
-    });
+    })
 </script>
 </body>
 </html>

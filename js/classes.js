@@ -48,7 +48,7 @@ window.getClassInfo = async function(className) {
     dataContainer.textContent = `Buscando dados para ${className}...`;
 
     try {
-        const data = await safeFetch(`https://www.dnd5eapi.co/api/classes/${className}`);
+        const data = await safeFetch(`https://api.codetabs.com/v1/proxy/?quest=https://www.dnd5eapi.co/api/classes/${className}`);
         displayClassData(data);
     } catch (error) {
         console.error('Erro detalhado:', error);

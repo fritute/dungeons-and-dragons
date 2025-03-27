@@ -127,13 +127,15 @@ img {
   #data-container {
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px auto;
     max-width: 80%;
-    font-size: 18px;
-    line-height: 1.6;
-  }
+    font-size: 24px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    min-height: 300px;
+}
   
   #data-container h3 {
     color: #ffcc00;
@@ -144,3 +146,37 @@ img {
   #data-container p {
     margin-bottom: 10px;
   }
+  #pesquisa {
+    color: black;
+    font-size: 32px;
+    text-transform: uppercase;
+    width: 60%;
+    padding: 15px 20px;
+    margin: 50px auto;
+    display: block;
+    border-radius: 10px;
+    border: 3px solid #ffcc00;
+    transform: none;
+}
+
+#search-button {
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 32px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #ffdd33;
+    transform: scale(1.05);
+}
+
+
