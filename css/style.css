@@ -26,6 +26,9 @@ header {
     width: 100vw;
     padding: 10px 20px; 
 }
+header nav a:hover{
+    border-bottom: 10px solid rgb(255, 0, 0);
+}
 
 nav {
     display: flex; 

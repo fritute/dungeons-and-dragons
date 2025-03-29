@@ -24,7 +24,13 @@ const images = [
 ]
 
 let currentImageIndex = 0;
-
+document.addEventListener('DOMContentLoaded', () => {
+  const imgElement = document.getElementById('central-image');
+  if (imgElement) {
+    imgElement.src = images[currentImageIndex].src;
+    imgElement.alt = images[currentImageIndex].alt;
+  }
+});
 function changeImage() {
   const imgElement = document.getElementById('central-image')
   if (imgElement) {
