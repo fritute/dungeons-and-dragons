@@ -3,22 +3,22 @@
 const images = [
   {
     "id": 1,
-    "src": "/src/img/image2.png",
+    "src": "./src/img/image2.png",
     "alt": "Imagem 1"
   },
   {
     "id": 2,
-    "src": "/src/img/image3.png",
+    "src": "./src/img/image3.png",
     "alt": "Imagem 2"
   },
   {
     "id": 3,
-    "src": "/src/img/image4.png",
+    "src": "./src/img/image4.png",
     "alt": "Imagem 3"
   },
   {
     "id": 4,
-    "src": "/src/img/image5.png",
+    "src": "./src/img/image5.png",
     "alt": "Imagem 4"
   }
 ]
